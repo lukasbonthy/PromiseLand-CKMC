@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swifly Network | Minecraft Portal</title>
+  <title>PromiseLand-CKMC | Minecraft Portal</title>
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Font (optional but clean) -->
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -86,9 +86,7 @@
       flex: 0 0 auto;
     }
     .brand-badge i{ color:white; font-size: 18px; filter: drop-shadow(0 2px 6px rgba(0,0,0,.4)); }
-    .brand-title{
-      line-height: 1.1;
-    }
+    .brand-title{ line-height: 1.1; }
     .brand-title .name{
       font-weight: 800;
       letter-spacing: .6px;
@@ -99,6 +97,7 @@
       color: var(--muted);
       margin-top: 2px;
     }
+
     .social{
       display:flex;
       align-items:center;
@@ -178,7 +177,7 @@
     .hero p{
       color: var(--muted);
       font-size: 1.05rem;
-      max-width: 60ch;
+      max-width: 70ch;
       margin-bottom: 18px;
     }
 
@@ -637,18 +636,19 @@
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <div class="brand-badge" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+        <div class="brand-badge" aria-hidden="true"><i class="fa-solid fa-cross"></i></div>
         <div class="brand-title">
-          <div class="name">Swifly Network</div>
+          <div class="name">PromiseLand-CKMC</div>
           <div class="sub">Minecraft Portal</div>
         </div>
       </div>
 
       <nav class="social" aria-label="Social links">
-        <a class="iconbtn" id="discordLink" href="#" target="_blank" rel="noopener">
+        <!-- If you don’t have these, you can delete them or set in JS -->
+        <a class="iconbtn" id="discordLink" href="#" target="_blank" rel="noopener" title="Discord">
           <i class="fa-brands fa-discord"></i>
         </a>
-        <a class="iconbtn" id="youtubeLink" href="#" target="_blank" rel="noopener">
+        <a class="iconbtn" id="youtubeLink" href="#" target="_blank" rel="noopener" title="YouTube">
           <i class="fa-brands fa-youtube"></i>
         </a>
       </nav>
@@ -657,13 +657,14 @@
 
   <main class="wrap">
     <!-- HERO -->
-    <section class="hero" aria-label="Swifly Network hero">
+    <section class="hero" aria-label="PromiseLand-CKMC hero">
       <div class="hero-grid">
         <div>
-          <div class="kicker"><i class="fa-solid fa-shield-halved"></i> Persistent world • Anarchy-style survival</div>
-          <h1>TRUE MINECRAFT FREEDOM</h1>
+          <div class="kicker"><i class="fa-solid fa-dove"></i> Chill • Jesus-centered • Community</div>
+          <h1>FUN, FRIENDSHIP, & FAITH</h1>
           <p>
-            Join Swifly Network’s long-term survival anarchy world. Launch the portal, add the server, and you’re in.
+            A chill, Jesus-centered Minecraft community focused on fun, friendship, and faith.
+            Join through the portal, add the server, and come hang out.
           </p>
 
           <div class="actions-row">
@@ -681,18 +682,20 @@
           <div class="quickrow">
             <div class="label"><i class="fa-solid fa-globe"></i> Server Address</div>
             <div class="value">
-              <span id="serverAddrText">wss://citrusmc.me</span>
+              <span id="serverAddrText">wss://PromiseLand-CKMC.eagler.host</span>
               <button class="copybtn" id="copyIP">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
             </div>
           </div>
+
           <div class="quickrow">
             <div class="label"><i class="fa-solid fa-code-branch"></i> Client Version</div>
             <div class="value"><span class="pill" id="serverVersionPill">1.8.8</span></div>
           </div>
+
           <div class="quickrow">
-            <div class="label"><i class="fa-solid fa-circle-info"></i> Notes</div>
+            <div class="label"><i class="fa-solid fa-circle-info"></i> Tip</div>
             <div class="value" style="font-family: inherit; color: rgba(234,234,255,.78);">
               Keep <strong>wss://</strong> in the address.
             </div>
@@ -706,7 +709,7 @@
       <div class="section-head">
         <div>
           <h2><i class="fa-solid fa-door-open"></i> Portal Access</h2>
-          <div class="desc">Choose your device — both connect to the same server.</div>
+          <div class="desc">Choose your device — both connect to PromiseLand-CKMC.</div>
         </div>
       </div>
 
@@ -737,35 +740,35 @@
       </div>
     </section>
 
-    <!-- FEATURES -->
+    <!-- FEATURES (faith-friendly + accurate tone) -->
     <section class="section" aria-label="Server features">
       <div class="section-head">
         <div>
-          <h2><i class="fa-solid fa-star"></i> Server Features</h2>
-          <div class="desc">Keep this section honest — edit numbers if they change.</div>
+          <h2><i class="fa-solid fa-star"></i> What We’re About</h2>
+          <div class="desc">Good vibes, good people, and a space that points back to Jesus.</div>
         </div>
       </div>
 
       <div class="grid">
         <div class="card">
-          <i class="fa-solid fa-ban"></i>
-          <h3>No Rules (Anarchy Style)</h3>
-          <p>Play your way. Survival-focused, minimal restrictions.</p>
+          <i class="fa-solid fa-handshake-angle"></i>
+          <h3>Friendly Community</h3>
+          <p>Meet people, build together, and keep the chat respectful.</p>
         </div>
         <div class="card">
-          <i class="fa-solid fa-hourglass-half"></i>
-          <h3>Long-Term World</h3>
-          <p>A persistent map designed to stay up for the long run.</p>
+          <i class="fa-solid fa-dove"></i>
+          <h3>Jesus-Centered</h3>
+          <p>Faith is welcome here — we keep it uplifting and positive.</p>
         </div>
         <div class="card">
-          <i class="fa-solid fa-users"></i>
-          <h3>Active Community</h3>
-          <p>Build groups, rivalries, bases, and history over time.</p>
+          <i class="fa-solid fa-campground"></i>
+          <h3>Survival Fun</h3>
+          <p>Explore, grind, build bases, and make memories.</p>
         </div>
         <div class="card">
-          <i class="fa-solid fa-plug-circle-bolt"></i>
-          <h3>Cross-Device Portal</h3>
-          <p>Use the portal on desktop or mobile to connect.</p>
+          <i class="fa-solid fa-people-group"></i>
+          <h3>Friendship First</h3>
+          <p>Play for fun — whether you’re new or experienced.</p>
         </div>
       </div>
     </section>
@@ -775,7 +778,7 @@
       <div class="section-head">
         <div>
           <h2><i class="fa-solid fa-camera"></i> Server Preview</h2>
-          <div class="desc">Screenshots from your server world.</div>
+          <div class="desc">Update these screenshots anytime.</div>
         </div>
       </div>
 
@@ -803,8 +806,8 @@
   <footer>
     <div class="foot">
       <div>
-        <div style="font-weight:900; letter-spacing:.3px;">© <span id="year"></span> Swifly Network</div>
-        <div style="color:rgba(234,234,255,.70); margin-top:6px;">No rules • No limits • Long-term survival</div>
+        <div style="font-weight:900; letter-spacing:.3px;">© <span id="year"></span> PromiseLand-CKMC</div>
+        <div style="color:rgba(234,234,255,.70); margin-top:6px;">Fun • Friendship • Faith</div>
       </div>
       <a class="discord" id="discordFooter" href="#" target="_blank" rel="noopener">
         <i class="fa-brands fa-discord"></i> Join the Discord
@@ -831,12 +834,12 @@
             <li>Launch the portal (Desktop or Mobile).</li>
             <li>Enter a username (remember it for next time).</li>
             <li>Go to <strong>Multiplayer</strong> → <strong>Add Server</strong>.</li>
-            <li>Server Address: <strong><span id="modalAddr">wss://citrusmc.me</span></strong></li>
+            <li>Server Address: <strong><span id="modalAddr">wss://PromiseLand-CKMC.eagler.host</span></strong></li>
             <li>Save → Join.</li>
           </ol>
 
           <div class="mono">
-            <span id="modalAddrMono">wss://citrusmc.me</span>
+            <span id="modalAddrMono">wss://PromiseLand-CKMC.eagler.host</span>
             <button class="copybtn" id="copyIPModal">
               <i class="fa-regular fa-copy"></i> Copy
             </button>
@@ -873,36 +876,43 @@
 
   <script>
     /*********************************************************
-     * EDIT THESE VALUES = "accurate info to the server"
+     * EDIT THESE VALUES = Accurate server info
      *********************************************************/
     const SERVER = {
-      name: "Swifly Network",
+      name: "PromiseLand-CKMC",
+      tagline: "A chill, Jesus-centered Minecraft community focused on fun, friendship, and faith.",
       version: "1.8.8",
-      address: "wss://citrusmc.me",   // IMPORTANT: keep wss:// if that’s what your portal uses
-      discord: "https://discord.gg/EVeQ3RssqX",
-      youtube: "https://www.youtube.com/@SwiflyNetwork",
+      address: "wss://PromiseLand-CKMC.eagler.host",
+      discord: "https://discord.gg/EVeQ3RssqX",              // change if needed
+      youtube: "https://www.youtube.com/@SwiflyNetwork",     // change/remove if needed
       desktopPortalPath: "/game.html",
       mobilePortalPath: "/mobile.html",
     };
 
-    // Bind links + text (so you only change it in one place)
     const $ = (id) => document.getElementById(id);
 
     function setText(id, value){ const el = $(id); if (el) el.textContent = value; }
     function setHref(id, value){ const el = $(id); if (el) el.href = value; }
 
+    // Links
     setHref("discordLink", SERVER.discord);
     setHref("discordFooter", SERVER.discord);
-    setHref("youtubeLink", SERVER.youtube);
 
+    // If you don't have a YouTube, hide it cleanly
+    if (SERVER.youtube && SERVER.youtube.trim() !== "") {
+      setHref("youtubeLink", SERVER.youtube);
+    } else {
+      $("youtubeLink").style.display = "none";
+    }
+
+    // Address + version
     setText("serverAddrText", SERVER.address);
     setText("modalAddr", SERVER.address);
     setText("modalAddrMono", SERVER.address);
-
-    setText("serverVersionPill", SERVER.version);
     setText("modalVersion", SERVER.version);
     setText("desktopVersionTag", "v" + SERVER.version);
     setText("mobileVersionTag", "v" + SERVER.version);
+    setText("serverVersionPill", SERVER.version);
 
     setText("year", new Date().getFullYear());
 
@@ -947,7 +957,6 @@
         await navigator.clipboard.writeText(text);
         showToast("Copied: " + text);
       }catch(err){
-        // Fallback
         const ta = document.createElement("textarea");
         ta.value = text;
         document.body.appendChild(ta);
